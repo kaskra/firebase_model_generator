@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      firebase_generator|firebase_model_generator:
+        enabled: True
+
+builders:
+  firebase_model_generator:
+    import: 'package:firebase_generator/builder.dart'
+    builder_factories: ['firebaseModel']
+    build_extensions: {".dart" : [".firebase_model.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
