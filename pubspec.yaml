@@ -5,13 +5,13 @@ author: Lukas Krauch <lukas.krauch@yahoo.de>
 homepage: https://github.com/kaskra/firebase_model_generator.git
 
 environment:
-  sdk: ">=2.1.0-0.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   analyzer: "0.39.14"
-  build: ^1.3.0
+  build: ^1.2.1
   build_config: ^0.4.0
-  source_gen: ^0.9.0
+  source_gen: ^0.9.6
 
 dev_dependencies:
   test: ^1.15.4
