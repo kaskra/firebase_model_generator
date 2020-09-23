@@ -35,7 +35,7 @@ class FirebaseModelGenerator extends GeneratorForAnnotation<FirebaseModel> {
 
   String _buildModel(ModelVisitor visitor) {
     String className = visitor.className.getDisplayString();
-    if (className.startsWith('_')) {
+    if (className.startsWith('\$')) {
       className = className.substring(1);
     } else {
       className = "_${visitor.className}";
