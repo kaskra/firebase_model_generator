@@ -197,7 +197,7 @@ class FirebaseModelGenerator extends GeneratorForAnnotation<FirebaseModel> {
   /// Create Firebase entity class
   String _buildEntity(ModelVisitor visitor) {
     String className = visitor.className.getDisplayString() + "Entity";
-    if (className.startsWith('_')) {
+    if (className.startsWith('\$')) {
       className = className.substring(1);
     } else {
       className = "_${visitor.className}";
