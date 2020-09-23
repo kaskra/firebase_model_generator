@@ -6,7 +6,7 @@ targets:
 
 builders:
   firebase_model_generator:
-    import: 'package:firebase_generator/builder.dart'
+    import: 'package:firebase_model_generator/builder.dart'
     builder_factories: ['firebaseModel']
     build_extensions: {".dart" : [".firebase_model.g.part"]}
     auto_apply: dependents
